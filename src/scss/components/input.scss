@@ -1,0 +1,16 @@
+input {
+  outline: none;
+  display: block;
+  font-family: inherit;
+  padding: 20px 25px;
+  border-radius: 6px;
+  border: 1px solid $additional-gray;
+  background: $bg;
+  color: $txt;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  &.error {
+    border: 1px solid red;
+  }
+}

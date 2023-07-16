@@ -1,0 +1,45 @@
+button {
+  border: none;
+  display: block;
+  font-family: inherit;
+  cursor: pointer;
+  @media(max-width: $mobile){
+    width: 100%;
+  }
+}
+
+.button {
+  border-radius: 10px;
+  padding: 20px 75px;
+  background: $linear-yellow;
+  box-shadow: 1px 3px 4px 0px rgba(244, 221, 150, 0.40);
+  color: $black;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  transition: all ease .5s;
+  &:hover {
+    background: linear-gradient(180deg, #F4DD96 0%, #E3BE4D 100%) ;
+    box-shadow: 2px 1px 10px 3px rgba(244, 221, 150, 0.40);
+  }
+  @media(max-width: $mobile){
+    padding: 20px 55px;
+  }
+}
+
+.secondary-btn {
+  background: $main-sun;
+  border-radius: 10px;
+  padding: 15px 20px;
+  color: $black;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  transition: background 0.3s;
+  position: relative;
+  overflow: hidden;
+  @media(max-width: $mobile){
+    width: 100% !important;
+  }
+}
+
