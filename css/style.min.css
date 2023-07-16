@@ -780,15 +780,13 @@ input.error {
 .location-btn {
   position: relative;
   z-index: 2;
-  width: 85%;
-}
-.location-btn span {
   display: flex;
   align-items: center;
   justify-content: center;
   column-gap: 10px;
   position: relative;
   z-index: 2;
+  width: 85%;
 }
 @media (max-width: 768px) {
   .location-btn {
