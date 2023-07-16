@@ -378,8 +378,13 @@ input.error {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  row-gap: 40px;
   margin-top: 170px;
+}
+.header .links a {
+  margin-bottom: 40px;
+}
+.header .links a:last-child {
+  margin-bottom: 0;
 }
 
 .container {
