@@ -1,0 +1,30 @@
+.hero{
+    padding: 100px 0;
+    @media(max-width: $L-mobile){
+        padding: 50px 0;
+    }
+    &-wrapper{
+        max-width: 550px;
+        @media(max-width: $L-mobile){
+            max-width: none;
+        }
+    }
+    &-subtitle{
+        color: $main-sun;
+        margin-bottom: 20px;
+        @media(max-width: $L-mobile){
+            margin-bottom: 15px;
+        }
+    }
+    &-title{
+        text-transform: uppercase;
+        color: $bg;
+    }
+    &-text{
+        color: $bg;
+        margin: 40px 0;
+        @media(max-width: $L-mobile){
+            margin: 30px 0;
+        }
+    }
+}

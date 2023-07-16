@@ -1,0 +1,178 @@
+.pros {
+    &-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media(max-width: $tablet){
+            column-gap: normal;
+            justify-content: space-between;
+        }
+        @media(max-width: $L-mobile){
+            align-items: flex-start;
+            flex-direction: column;
+            row-gap: 40px;
+        }
+    }
+
+    &-items {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 50px 0;
+        @media(max-width: $L-mobile){
+            margin: 40px 0;
+        }
+    }
+
+    &-item {
+        padding: 30px 0;
+        border-bottom: 1px solid $additional-gray;
+        cursor: pointer;
+        @media(max-width: $L-mobile){
+            padding: 20px 0;
+        }
+        &:first-child {
+            padding-top: 0;
+        }
+
+        &:last-child {
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+    }
+
+    &-heading {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        transition: all .3s;
+
+        svg {
+            width: 85px;
+            height: 85px;
+            @media(max-width: $L-mobile){
+                width: 60px;
+                height: 60px;
+            }
+        }
+        path {
+            transition: all .3s;
+        }
+
+        p {
+            transition: all .3s;
+        }
+
+        @media(min-width: $tablet){
+            &:hover {
+                margin-left: 50px;
+            }
+        }
+    }
+
+    &-leaves {
+        &:hover {
+            & path {
+                fill: $main-tree;
+            }
+
+            & p {
+                color: $main-tree;
+            }
+        }
+    }
+
+    &-eco {
+        &:hover {
+            & path {
+                fill: $additional-blue;
+            }
+
+            & p {
+                color: $additional-blue;
+            }
+        }
+    }
+
+    &-boiler {
+        &:hover {
+            & path {
+                fill: #E1A449;
+            }
+
+            & p {
+                color: #E1A449;
+                ;
+            }
+        }
+    }
+
+    &-home {
+        &:hover {
+            & path {
+                fill: #10153D;
+            }
+
+            & p {
+                color: #10153D;
+            }
+        }
+    }
+    .accordion-active{
+        &.pros-leaves{
+            path{
+                fill: $main-tree;
+            }
+            p{
+                color: $main-tree;
+            }
+        }
+        &.pros-boiler{
+            & path {
+                fill: #E1A449;
+            }
+
+            & p {
+                color: #E1A449;
+                ;
+            }
+        }
+        &.pros-eco{
+            & path {
+                fill: $additional-blue;
+            }
+
+            & p {
+                color: $additional-blue;
+            }
+        }
+        &.pros-home{
+            & path {
+                fill: #10153D;
+            }
+
+            & p {
+                color: #10153D;
+            }
+        }
+    }
+    .accordion__item .accordion__title {
+        position: relative;
+    }
+
+    .accordion__item .accordion__content {
+        padding-top: 30px;
+        display: none;
+        p{
+            span{
+                font-weight: 600;
+            }
+            &:not(:last-child){
+                margin-bottom: 20px;
+            }
+        }
+        @media(max-width: $L-mobile){
+            padding-top: 20px;
+        }
+    }
+}
