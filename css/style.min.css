@@ -166,23 +166,6 @@ button {
   }
 }
 
-.secondary-btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(180deg, #F4DD96 0%, #E3BE4D 100%);
-  opacity: 0;
-  transition: opacity 0.3s;
-  z-index: 0;
-}
-
-.secondary-btn:hover::before {
-  opacity: 1;
-}
-
 input {
   outline: none;
   display: block;
